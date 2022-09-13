@@ -21,16 +21,16 @@ function App() {
       <h1>CADASTRO TRINITY</h1>
       <form onSubmit={sendEmail}>
         <ul className='Lista'>
-          <li><p>Nome:</p> <input type='text' name="user_name" /></li>
-          <li><p>Telefone:</p> <input type='tel' name="user_phone"/></li>
-          <li><p>E-mail:</p> <input type='email' name="user_email"/></li>
-          <li><p>Profissão:</p> <input type='text' name="user_occupation"/></li>
-          <li><p>Nascimento:</p> <input type='date' name="user_birth" /></li>
+          <li><p>Nome:</p> <input required type='text' name="user_name" /></li>
+          <li><p>Telefone:</p> <input required type='tel' name="user_phone"/></li>
+          <li><p>E-mail:</p> <input required type='email' name="user_email"/></li>
+          <li><p>Profissão:</p> <input required type='text' name="user_occupation"/></li>
+          <li><p>Nascimento:</p> <input required type='date' name="user_birth" /></li>
         </ul>
         <ul className='pct'>
               <p>Plano de Horas:</p>
               <li>
-                <input type="radio" id="mensal" name="user_plano" value="Mensal"/>
+                <input required type="radio" id="mensal" name="user_plano" value="Mensal"/>
                 <label htmlFor="mensal">Mensal</label>
               </li>
               <li>
