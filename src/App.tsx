@@ -28,11 +28,11 @@ function App() {
           <p>Plano de Horas:</p>
           <div className='pct'>
               <input type="radio" id="mensal" name="user_plano" value="mensal"/>
-              <p for="mensal">MENSAL</p>
+              <label htmlFor="mensal">MENSAL</label>
               <input type="radio" id="pct_horas" name="user_plano" value="pct_horas"/>
-              <p for="pct_horas">PCT DE HORAS</p>
+              <label htmlFor="pct_horas">PCT DE HORAS</label>
               <input type="radio" id="horas_avulsas" name="user_plano" value="horas_avulsas"/>
-              <p for="horas_avulsas">HORAS AVULSAS</p><br />
+              <label htmlFor="horas_avulsas">HORAS AVULSAS</label><br />
           </div>
           <input className='submit' value="Send" type='submit'></input>
       </form>
