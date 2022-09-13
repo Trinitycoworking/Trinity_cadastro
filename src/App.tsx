@@ -1,4 +1,5 @@
 import emailjs from '@emailjs/browser';
+import logo from './assets/icon.png'
 
 function App() {
 
@@ -16,25 +17,32 @@ function App() {
 
   return (
     <div className="App">
-      <form onSubmit={sendEmail}>
+      <img className='Logo' src={logo}></img>
       <h1>CADASTRO TRINITY</h1>
+      <form onSubmit={sendEmail}>
         <ul className='Lista'>
           <li><p>Nome:</p> <input type='text' name="user_name" /></li>
           <li><p>Telefone:</p> <input type='tel' name="user_phone"/></li>
           <li><p>E-mail:</p> <input type='email' name="user_email"/></li>
           <li><p>Profissão:</p> <input type='text' name="user_occupation"/></li>
           <li><p>Nascimento:</p> <input type='date' name="user_birth" /></li>
+        </ul>
+        <ul className='pct'>
+              <p>Plano de Horas:</p>
+              <li>
+                <input type="radio" id="mensal" name="user_plano" value="Mensal"/>
+                <label htmlFor="mensal">Mensal</label>
+              </li>
+              <li>
+                <input type="radio" id="pct_horas" name="user_plano" value="Pacote de Horas"/>
+                <label htmlFor="pct_horas">Pacote de Horas</label>
+              </li>
+              <li>
+                <input type="radio" id="horas_avulsas" name="user_plano" value="Horas Avulsas"/>
+                <label htmlFor="horas_avulsas">Horas Avulsas</label><br />
+              </li>
           </ul>
-          <p>Plano de Horas:</p>
-          <div className='pct'>
-              <input type="radio" id="mensal" name="user_plano" value="mensal"/>
-              <label htmlFor="mensal">MENSAL</label>
-              <input type="radio" id="pct_horas" name="user_plano" value="pct_horas"/>
-              <label htmlFor="pct_horas">PCT DE HORAS</label>
-              <input type="radio" id="horas_avulsas" name="user_plano" value="horas_avulsas"/>
-              <label htmlFor="horas_avulsas">HORAS AVULSAS</label><br />
-          </div>
-          <input className='submit' value="Send" type='submit'></input>
+          <input className='submit' value="Enviar" type='submit'></input>
       </form>
     </div>
   )
