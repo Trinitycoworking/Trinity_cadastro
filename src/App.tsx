@@ -8,7 +8,7 @@ function App() {
 
     emailjs.sendForm('service_a469hhj', 'template_37gpwxx', e.target, 'n1EZEONgsHkGLpvdQ')
       .then((result) => {
-          console.log(result.text);
+          alert("Cadastro enviado! A Trinity agradece! ♥");
       }, (error) => {
           console.log(error.text);
       });
