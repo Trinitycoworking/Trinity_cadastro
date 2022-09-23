@@ -5,17 +5,27 @@
   box-sizing: border-box
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 
+body
+  background-image: url('./assets/background.jpeg')
+  background-position: center
+  background-repeat: no-repeat
+  background-size: cover
+
 .App
   display: flex
+  position: relative
   flex-direction: column
-  width: 100%
+  margin: 2% 2%
   align-items: center
   padding: 5% 4%
-  background-color: #404040
   color: #fff
+  background-color: rgba(64, 64, 64, 70%)
 
   .Logo
-    width: 25%
+    width: 50%
+  
+  h1
+    font-size: 1.5rem
 
 form
   height: 100%
@@ -64,12 +74,12 @@ form
 
 .submit
   position: relative
-  border: 1px solid #2cad8e
+  border: 2px solid #2cad8e
   width: 100%
   background: #222
   color: #2cad8e
   font-size: 1.2rem
-  padding: 2% 0
+  padding: 1rem 0
   margin-bottom: .3rem
   transition: 1s
 
@@ -78,3 +88,16 @@ form
       width: 100%
       background: #2cad8e
       color: #222
+
+.footer
+  display: flex
+  position: absolute
+  flex-direction: column
+  text-align: center
+  margin-top: 112vh
+  padding: 1rem 0%
+  background-color: #333
+  width: 109%
+
+  a
+    color: #2cad8e

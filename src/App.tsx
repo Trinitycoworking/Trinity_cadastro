@@ -1,5 +1,6 @@
 import emailjs from '@emailjs/browser';
 import logo from './assets/icon.png'
+import logo2 from './assets/icon05.png'
 
 function App() {
 
@@ -18,8 +19,8 @@ function App() {
 
   return (
     <div className="App">
-      <img className='Logo' src={logo}></img>
-      <h1>CADASTRO TRINITY</h1>
+      <img className='Logo' src={logo2}></img>
+      <h1>CADASTRO</h1>
       <form onSubmit={sendEmail}>
         <ul className='Lista'>
           <li><p>Nome:</p> <input required type='text' name="user_name" /></li>
@@ -45,6 +46,12 @@ function App() {
           </ul>
           <input className='submit' value="Enviar" type='submit'></input>
       </form>
+
+      <div className='footer'>
+        <span>Todos os direitos reservados</span>
+        <span>Trinity Coworking ®, 2022</span>
+        <span>Desenvolvido por <a href='https://dredeco.github.io/portfolio-page/'>André Fernandes</a></span>
+      </div>
     </div>
   )
 }
