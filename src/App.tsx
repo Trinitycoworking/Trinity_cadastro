@@ -12,7 +12,7 @@ function App() {
       }, (error) => {
           console.log(error.text);
       });
-      alert("Cadastro enviado!\r\nA Trinity agradeçe ♥")
+      alert("Cadastro enviado!\r\nA Trinity agradeçe ✔")
       e.target.reset();
 });
 
