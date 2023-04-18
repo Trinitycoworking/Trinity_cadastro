@@ -50,7 +50,7 @@ function App() {
       <div className='footer'>
         <span>Todos os direitos reservados</span>
         <span>Trinity Coworking ®, 2022</span>
-        <span>Desenvolvido por <a href='https://dredeco.github.io/portfolio-page/'>André Fernandes</a></span>
+        <span>Desenvolvido por <a href='https://dredeco.github.io/portfolio/'>André Fernandes</a></span>
       </div>
     </div>
   )
