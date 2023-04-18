@@ -1,5 +1,4 @@
 import emailjs from '@emailjs/browser';
-import logo from './assets/icon.png'
 import logo2 from './assets/icon05.png'
 
 function App() {
